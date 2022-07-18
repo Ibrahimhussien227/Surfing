@@ -10,7 +10,7 @@ export const categoryReducer = createSlice({
   name: "categories",
   initialState,
   reducers: {
-    setPosts: (state, action) => {
+    setCategory: (state, action) => {
       state.categories = action.payload;
     },
   },
@@ -21,15 +21,4 @@ export const categoryReducer = createSlice({
   },
 });
 
-export const { setPosts } = categoryReducer.actions;
-
-// const reducer = (state = {}, action) => {
-//   switch (action.type) {
-//     case FETCH_CATEGORIES:
-//       return { ...state, ..._.mapKeys(action.payload, "id") };
-//     default:
-//       return state;
-//   }
-// };
-
-// export default reducer;
+export const { setCategory } = categoryReducer.actions;
