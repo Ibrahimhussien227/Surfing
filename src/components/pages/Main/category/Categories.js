@@ -9,7 +9,7 @@ const Categories = ({ selectedOption }) => {
 
   useEffect(() => {
     dispatch(fetchCategoriesAction());
-  }, []);
+  }, [dispatch]);
 
   const soretedCategories = categories
     .map((a) => ({
