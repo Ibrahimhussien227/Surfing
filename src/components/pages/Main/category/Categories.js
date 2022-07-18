@@ -27,9 +27,10 @@ const Categories = ({ selectedOption }) => {
 
   const categoriesMap = () => {
     return soretedCategories.map((category) => {
-      const logo = require(`.${
-        category.image ? category.image : "/images/category(11).png"
-      }`);
+      const imgUrl = category.image
+        ? `https://goodsurfing.org${category.image}`
+        : require("./images/category(11).png");
+
       return (
         <div key={category.id} className={s.itemContainer}>
           <p className={s.text}>
@@ -45,12 +46,10 @@ const Categories = ({ selectedOption }) => {
                   return category.name_ru;
               }
             })()}
-
             <br />
           </p>
           <p className={s.offer}>{randomInteger(1, 30)} предложения</p>
-
-          <img className={s.cover} src={logo} alt="Cover" />
+          <img className={s.cover} src={imgUrl} alt="Cover" />
         </div>
       );
     });
