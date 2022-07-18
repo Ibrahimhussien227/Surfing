@@ -1,0 +1,96 @@
+@import "src/components/pages/Main/style.module";
+
+.navContainer {
+  align-items: flex-end;
+  display: flex;
+  height: 80px;
+  min-width: 1292px;
+}
+
+.logo {
+  @include position(20px, 1185px);
+}
+
+.logoIcon {
+  @include position(22px, 1040px);
+}
+
+.languageText {
+  height: 17px;
+  @include position(25px, 994px);
+  @include font(14px, 16px);
+  text-transform: uppercase;
+}
+
+.dropdown {
+  @include position(30px, 985px);
+}
+
+.containerSearch {
+  position: absolute;
+  left: 406px;
+  right: 680px;
+  top: 20px;
+  bottom: 20px;
+  background: #3dabf7;
+  border-radius: 2px;
+}
+
+.searchText {
+  height: 20px;
+  @include position(-5px, 46px);
+  @include font(16px, 19px, 600, #ffffff);
+}
+
+.circleSearch {
+  @include position(12px, 19px);
+}
+
+.lineSearch {
+  @include position(22px, 15px);
+}
+
+.community {
+  @include position(15px, 540px);
+  @include font(16px, 19px, 600, #3dabf7);
+}
+
+.communityDropdown {
+  @include position(43px, 528px);
+}
+
+.projectText {
+  height: 20px;
+  @include position(15px, 396px);
+  @include font(16px, 19px, 600, #3dabf7);
+}
+
+.projectDropdown {
+  @include position(42px, 382px);
+}
+
+.signin {
+  height: 20px;
+  @include position(15px, 185px);
+  @include font(16px, 19px, 600, #3dabf7);
+}
+
+.registerContainer {
+  position: absolute;
+  right: 50px;
+  left: 1116px;
+  top: 20px;
+  bottom: 20px;
+  border: 1px solid #3dabf7;
+  border-radius: 2px;
+}
+
+.registerText {
+  height: 20px;
+  @include position(-8px, 10px);
+  @include font(16px, 19px, 600, #3dabf7);
+}
+.languageSelect {
+  left: 270px;
+  top: -20px;
+}

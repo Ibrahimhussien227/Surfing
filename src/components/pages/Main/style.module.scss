@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+@mixin position($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin font($fontSize, $lineHeight, $font-weight: 400, $color: #212121) {
+  font-family: "Lato";
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-weight: $font-weight;
+}
+
+.containerCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+.containerCenter > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 81px;
+  height: 1270px;
+  position: relative;
+  width: 1280px;
+}
+.header {
+  height: 80px;
+  min-width: 1280px;
+  position: relative;
+}
+
+.categoryContainer {
+  height: 683px;
+  min-width: 1182px;
+  position: relative;
+}
+
+.textLabel {
+  position: absolute;
+  height: 32px;
+  left: 437px;
+  top: 0px;
+  @include font(26px, 32px, 400);
+}
+
+.footerContainer {
+  right: 0%;
+  top: 72.76%;
+  background: #0e1d27;
+  min-width: 1280px;
+  height: 346px;
+}

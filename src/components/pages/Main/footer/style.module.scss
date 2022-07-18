@@ -1,0 +1,112 @@
+@import "src/components/pages/Main/style.module";
+
+.footerContainer {
+  right: 0%;
+  top: 72.76%;
+  background: #0e1d27;
+  min-width: 1280px;
+  height: 346px;
+  position: absolute;
+}
+
+.logoName {
+  @include position(40px, 1100px);
+}
+
+.langContainer {
+  @include position(53px, 1030px);
+}
+
+.langText {
+  @include position(-15px, 0);
+  @include font(14px, 17px, 600, #ffffff);
+}
+
+.dropdownIcon {
+  @include position(5px, -10px);
+}
+
+.text {
+  @include position(144px, 1134px);
+  @include font(14px, 24px, 500, #82949f);
+  text-decoration-line: underline;
+}
+
+.containerSocial {
+  @include position(108px, 0);
+}
+
+.instaIcon {
+  @include position(0, 1210px);
+}
+
+.telegIcon {
+  @include position(0, 1174px);
+}
+
+.vkIcon {
+  @include position(0, 1138px);
+}
+
+.fbIcon {
+  @include position(0, 1102px);
+}
+
+.communityContainer {
+  @include position(50px, 724px);
+}
+
+.communityText {
+  @include position(-15px, 0);
+  @include font(18px, 22px, 500, #ffffff);
+}
+.communityPoints {
+  left: -70px;
+  @include position(30px, 740px);
+  @include font(12px, 20px, 500, #82949f);
+  text-decoration-line: underline;
+}
+
+.aboutContainer {
+  left: 701px;
+  @include position(50px, 492px);
+}
+
+.aboutText {
+  @include font(18px, 22px, 500, #ffffff);
+}
+
+.aboutPoints {
+  position: relative;
+  top: 5px;
+  @include font(12px, 20px, 500, #82949f);
+  text-decoration-line: underline;
+}
+
+.organizerContainer {
+  left: 951px;
+  @include position(50px, 168px);
+}
+
+.organizerText {
+  @include font(18px, 22px, 500, #ffffff);
+}
+
+.organizerPoints {
+  @include font(12px, 20px, 500, #82949f);
+  text-decoration-line: underline;
+}
+
+.breakPoint {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 76.3%;
+  bottom: 22.54%;
+  border: 0.5px solid #8494a1;
+}
+
+.text1 {
+  @include position(283px, 550px);
+  @include font(14px, 24px, 500, #82949f);
+}
