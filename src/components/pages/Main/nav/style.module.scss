@@ -1,96 +1,119 @@
 @import "src/components/pages/Main/style.module";
 
 .navContainer {
+  position: relative;
   align-items: flex-end;
   display: flex;
   height: 80px;
-  min-width: 1292px;
+  max-width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #dfe6eb;
 }
 
 .logo {
-  @include position(20px, 1185px);
+  position: relative;
+  margin-left: 12%;
+  margin-bottom: 1%;
 }
 
 .logoIcon {
-  @include position(22px, 1040px);
+  margin-left: 2%;
+  margin-bottom: 1%;
 }
 
-.languageText {
+.languageSelect {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 40%;
   height: 17px;
-  @include position(25px, 994px);
   @include font(14px, 16px);
-  text-transform: uppercase;
-}
-
-.dropdown {
-  @include position(30px, 985px);
 }
 
 .containerSearch {
-  position: absolute;
-  left: 406px;
-  right: 680px;
-  top: 20px;
-  bottom: 20px;
   background: #3dabf7;
   border-radius: 2px;
+  margin-left: 5%;
+  padding-left: 5%;
+  display: inline-flex;
+  margin-bottom: 1%;
 }
 
 .searchText {
   height: 20px;
-  @include position(-5px, 46px);
+  position: relative;
+  right: 30%;
+  display: flex;
+  margin-bottom: 2%;
+  bottom: 5px;
   @include font(16px, 19px, 600, #ffffff);
 }
 
 .circleSearch {
-  @include position(12px, 19px);
+  position: relative;
+  top: 15px;
+  right: 100%;
+  margin-bottom: 2%;
 }
 
 .lineSearch {
-  @include position(22px, 15px);
+  position: relative;
+  top: 20px;
+  right: 110%;
+  margin-bottom: 2%;
 }
 
 .community {
-  @include position(15px, 540px);
+  position: relative;
+  left: 40%;
+  top: 10px;
   @include font(16px, 19px, 600, #3dabf7);
 }
 
 .communityDropdown {
-  @include position(43px, 528px);
+  position: relative;
+  bottom: 25px;
+  left: 130px;
 }
 
 .projectText {
+  position: relative;
+
+  left: 100%;
+  top: 11px;
+
   height: 20px;
-  @include position(15px, 396px);
   @include font(16px, 19px, 600, #3dabf7);
 }
 
 .projectDropdown {
-  @include position(42px, 382px);
+  position: relative;
+  bottom: 25px;
+  left: 150px;
 }
 
 .signin {
+  position: relative;
+  bottom: 3px;
+  left: 20%;
+
   height: 20px;
-  @include position(15px, 185px);
   @include font(16px, 19px, 600, #3dabf7);
 }
 
 .registerContainer {
-  position: absolute;
-  right: 50px;
-  left: 1116px;
-  top: 20px;
-  bottom: 20px;
+  position: relative;
+
   border: 1px solid #3dabf7;
   border-radius: 2px;
+  left: 21%;
+  bottom: 3px;
+  padding-left: 30px;
 }
 
 .registerText {
+  position: relative;
+  right: 15px;
+
   height: 20px;
-  @include position(-8px, 10px);
   @include font(16px, 19px, 600, #3dabf7);
-}
-.languageSelect {
-  left: 270px;
-  top: -20px;
 }

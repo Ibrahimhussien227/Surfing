@@ -1,39 +1,39 @@
 @import "src/components/pages/Main/style.module";
 
-.footerContainer {
-  right: 0%;
-  top: 72.76%;
-  background: #0e1d27;
-  min-width: 1280px;
-  height: 346px;
-  position: absolute;
-}
-
 .logoName {
-  @include position(40px, 1100px);
+  position: relative;
+  left: 4%;
+  top: 11%;
 }
 
 .langContainer {
-  @include position(53px, 1030px);
+  position: relative;
+  top: 0;
+  left: 15%;
 }
 
 .langText {
-  @include position(-15px, 0);
+  margin-top: 2px;
   @include font(14px, 17px, 600, #ffffff);
 }
 
 .dropdownIcon {
-  @include position(5px, -10px);
+  position: relative;
+  bottom: 35px;
+  left: 20px;
 }
 
 .text {
-  @include position(144px, 1134px);
+  position: relative;
+  left: 5%;
+  top: 5%;
   @include font(14px, 24px, 500, #82949f);
   text-decoration-line: underline;
 }
 
 .containerSocial {
-  @include position(108px, 0);
+  position: relative;
+  right: 14%;
 }
 
 .instaIcon {
@@ -53,48 +53,32 @@
 }
 
 .communityContainer {
-  @include position(50px, 724px);
+  position: relative;
+  right: 55%;
+  bottom: 30%;
 }
 
 .communityText {
-  @include position(-15px, 0);
+  @include position(-15px, 150px);
   @include font(18px, 22px, 500, #ffffff);
 }
 .communityPoints {
-  left: -70px;
-  @include position(30px, 740px);
+  position: absolute;
+  right: 60%;
+  top: 30px;
+  left: 85%;
   @include font(12px, 20px, 500, #82949f);
   text-decoration-line: underline;
 }
 
 .aboutContainer {
-  left: 701px;
-  @include position(50px, 492px);
+  position: relative;
+  left: 50%;
+  bottom: 30%;
 }
 
 .aboutText {
   @include font(18px, 22px, 500, #ffffff);
-}
-
-.aboutPoints {
-  position: relative;
-  top: 5px;
-  @include font(12px, 20px, 500, #82949f);
-  text-decoration-line: underline;
-}
-
-.organizerContainer {
-  left: 951px;
-  @include position(50px, 168px);
-}
-
-.organizerText {
-  @include font(18px, 22px, 500, #ffffff);
-}
-
-.organizerPoints {
-  @include font(12px, 20px, 500, #82949f);
-  text-decoration-line: underline;
 }
 
 .breakPoint {
@@ -107,6 +91,6 @@
 }
 
 .text1 {
-  @include position(283px, 550px);
+  @include position(283px, 650px);
   @include font(14px, 24px, 500, #82949f);
 }

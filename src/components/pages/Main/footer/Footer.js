@@ -30,19 +30,8 @@ const Footer = () => {
       </div>
       <div className={s.aboutContainer}>
         <div className={s.aboutText}>О проекте</div>
-        <p className={s.aboutPoints}>
-          О НКО Наша команда Как это работает Правила Политика
-          конфиденциальности Новости
-        </p>
-      </div>
-      <div className={s.organizerContainer}>
-        <div className={s.organizerText}>Для организаторов</div>
-        <p className={s.organizerPoints}>
-          Стать хостом Как это работает Правила Курсы для организаторов
-        </p>
       </div>
       <div className={s.breakPoint} />
-
       <p className={s.text1}>© GoodSurfing, 2017-2021</p>
     </div>
   );
